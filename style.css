@@ -1,0 +1,154 @@
+/*AJUSTES GENERALES*/
+
+body {
+    background-color: pink;
+}
+
+.Cells {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 50px 1fr 60px;
+    margin: 10px;
+    border: 5px black solid;
+    border-radius: 40px;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+}
+
+button p {
+    cursor: default;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    margin: 0px;
+    font-size: 50px;
+    color: rgb(255, 74, 249);
+    border-radius: 1000px;
+    border: 3px rgb(255, 74, 249) solid;
+
+}
+
+button p:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: rgb(146, 23, 142);
+    border: 3px rgb(146, 23, 142) solid;
+}
+
+
+.camara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+
+label {
+    margin: 5px;
+}
+
+
+.botoneras {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(219, 137, 217);
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    cursor: default;
+}
+
+.botoneras div:hover {
+    transition: 1s;
+    color: white;
+    background-color: rgb(96, 1, 93);
+}
+
+
+
+/* PRIMER CELL */
+.login {
+    display: grid;
+    align-content: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btnLogin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* SEGUNDO CELL */
+
+
+/* TERCER CELL */
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(138, 0, 133);
+    color: rgb(255, 74, 249);
+    height: 60px;
+    font-size: 50px;
+    top: 0px;
+    margin: 0px;
+}
+
+.reloj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: none;
+
+
+}
+
+
+.btn-next {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.btn-next button {
+    margin: 5px;
+    color: rgb(255, 74, 249);
+    border: 3px rgb(255, 74, 249) solid;
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-next button:hover {
+    transition: 1s;
+    color: white;
+    background-color: rgb(96, 1, 93);
+}
+
+
+
+
+
+/* CUARTO CELL */
