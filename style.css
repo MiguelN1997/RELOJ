@@ -1,7 +1,7 @@
 /*AJUSTES GENERALES*/
 
 body {
-    background-color: pink;
+    background-image: url(/img/bg-body.jpg);
 }
 
 .Cells {
@@ -9,18 +9,57 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     padding: 20px;
+    margin: 10px;
+}
+
+.marca button {
+    margin: 10px;
+    height: 60%;
+    width: 80%;
+    background-color: black;
+    color: rgba(0, 191, 255, 0.6);
+    border: none;
+}
+
+.marca button:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #111;
+}
+
+.marca img {
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.marca {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+
 }
 
 .grid {
     display: grid;
     grid-template-rows: 50px 1fr 60px;
     margin: 10px;
-    border: 3px black solid;
-    border-radius: 40px;
     width: 300px;
     height: 500px;
     overflow: hidden;
     background-color: white;
+    position: relative;
+    background: #111;
+    border: 2px solid #00bfff;
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 5px #00bfff,
+        0 0 10px #00bfff,
+        0 0 20px #00bfff,
+        0 0 40px rgba(0, 191, 255, 0.6);
+
+    transition: 0.3s ease;
 }
 
 button p {
@@ -73,14 +112,14 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: gray;
     height: 100%;
 }
 
 .botoneras div:hover {
-    transition: 1s;
+    transition: 0.5s;
     color: white;
-    background-color: rgb(96, 1, 93);
+    background-color: rgba(147, 147, 147, 0.522);
 }
 
 
@@ -88,28 +127,44 @@ label {
 
 
 /* PRIMER CELL */
+/*INCIO SESION CON FORM DESPLEGABLE EN EL CELL*/
 .login {
     display: grid;
     align-content: center;
     padding: 20px;
     gap: 10px;
-    background-color: rgb(219, 137, 217);
+    background-color: transparent;
     margin: 10px;
+    border: 2px solid #00bfff;
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 2px #00bfff,
+        0 0 2px #00bfff,
+        0 0 2px #00bfff,
+        0 0 2px rgba(0, 191, 255, 0.6);
     border-radius: 10px;
+    color: white;
 }
 
-.btnLogin {
+form .btnLogin {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px;
 }
 
+.btnLogin button {
+    border: none;
+    color: white;
+    background-color: rgba(0, 191, 255, 0.6);
+}
 
 /* SEGUNDO CELL */
+/* GALERIA DE FOTOS*/
 
 
 /* TERCER CELL */
+/*CAMBIO DE TIPO DE VISTA DE RELOJ*/
 
 
 .titulo {
@@ -127,10 +182,8 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: white;
     border: none;
-
-
 }
 
 
@@ -162,3 +215,30 @@ label {
 
 
 /* CUARTO CELL */
+/* LISTA DE LA COMPRA RESERVABLA EN LA TIENDA UNU*/
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+
+}
+
+.apps button {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: crosshair;
+}
+
+.apps div button img {
+    height: 90%;
+    width: 100%;
+
+}
