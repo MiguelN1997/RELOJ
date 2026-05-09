@@ -12,6 +12,7 @@ body {
     margin: 10px;
 }
 
+
 .marca button {
     margin: 10px;
     height: 60%;
@@ -103,9 +104,10 @@ label {
     background-color: rgb(0, 0, 0);
     filter: opacity(100%);
     cursor: default;
-    min-height: 50px;
-    max-height: 60px;
+    min-height: 40px;
+    max-height: 50px;
     width: 100%;
+    bottom: 0px;
 }
 
 .botoneras div {

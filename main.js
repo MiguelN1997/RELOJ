@@ -22,16 +22,20 @@ function mostrarHora() {
 setInterval(mostrarHora, 1000);
 
 
-document.getElementById('siguiente').addEventListener('onclick', () => {
-    window.location.href = "/reloj2/reloj2.html"
-})
 
-document.getElementById('anterior').addEventListener('onclick', () => {
-    window.location.href = "/reloj2/reloj1.html"
-})
+document.getElementById('links').addEventListener('click', () => {
+    window.location.href = "./links.html"
+});
 
 
+document.getElementById('cell').addEventListener('click', () => {
+    window.location.href = "./cell.html"
+});
 
+
+document.getElementById('home').addEventListener('click', () => {
+    window.location.href = "./index.html"
+});
 
 
 
